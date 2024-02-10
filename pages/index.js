@@ -15,7 +15,16 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Default backend - check your application configuration
+          Default Backend
+        </p>
+        <p className={styles.smalltext}>
+          Check your application configuration &
+        </p>
+        <p className={styles.smalltext}>
+          ensure you are using the correct application url
+        </p>
+        <p className={styles.smalltext}>
+          as configured in your ingress mapping
         </p>
 
       </main>

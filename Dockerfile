@@ -9,7 +9,7 @@ FROM node:18-alpine as builder
 WORKDIR /usr/src/app
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
-ARG PORT=80
+ARG PORT=3000
 ENV PORT=${PORT}
 COPY . .
 COPY --from=deps /usr/src/app/node_modules ./node_modules
